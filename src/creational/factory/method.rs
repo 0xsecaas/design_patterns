@@ -26,7 +26,7 @@ trait Logistics {
     fn create_transport(&self) -> Box<dyn Transport>;
 }
 
-// Concrete Creator A
+/// Concrete Creator A
 struct RoadLogistics;
 impl Logistics for RoadLogistics {
     fn create_transport(&self) -> Box<dyn Transport> {
