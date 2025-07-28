@@ -30,7 +30,7 @@ impl std::fmt::Display for LogLevel {
             LogLevel::Debug => "DEBUG",
             LogLevel::Trace => "TRACE",
         };
-        write!(f, "{}", level_str)
+        write!(f, "{level_str}")
     }
 }
 
@@ -41,7 +41,7 @@ impl Logger {
     /// - `msg`: The message to be logged.
     /// - `level`: The log level (`LogLevel` enum, e.g., `LogLevel::Info`, `LogLevel::Error`) to associate with the message.
     fn log(&self, msg: &str, level: LogLevel) {
-        println!("{}:{}", msg, level);
+        println!("{msg}:{level}");
     }
 }
 
