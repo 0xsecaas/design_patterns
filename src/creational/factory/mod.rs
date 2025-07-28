@@ -1,5 +1,6 @@
-/// Create entire families of related objects without tying them to specific implementations.
+//! Enhances object creation
+/// Trait with multiple creation methods for a family of related products.
 mod abstract_pattern;
 
-/// Enhances object creation with flexibility and extensibility
-mod method;
+/// Trait with one creation method for one product.
+mod method_pattern;

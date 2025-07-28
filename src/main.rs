@@ -3,5 +3,5 @@
 mod creational;
 
 fn main() {
-    println!("Hello, world!");
+    println!("Common Patterns in Rust programming language!");
 }
